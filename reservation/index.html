@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <form id="reservationForm">
+            <h1>Reservation Request</h1>
+            <fieldset id="general-information">
+                <legend>General Information</legend>
+                <section>
+                    <label for="arrivalDate">Arrival Date:</label>
+                    <input type="date" id="arrivalDate" name="arrivalDate">
+                </section>
+
+                <section>
+                    <label for="nights">Nights:</label>
+                    <input type="text" id="nights" name="nights">
+                </section>
+
+                <section>
+                    <label for="adults">Adults:</label>
+                    <select id="adults">
+                        <option value="" selected disabled>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+
+                <section>
+                    <label for="children">Children:</label>
+                    <select id="children">
+                        <option value="" selected disabled>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </section>
+            </fieldset>
+            <br>
+            <fieldset id="preferences">
+                <legend>Preferences</legend>
+                <section>
+                    <label for="roomType">Room type:</label>
+                    <input type="radio" id="roomType" name="roomType"> Standard
+                    <input type="radio" id="roomType" name="roomType"> Business
+                    <input type="radio" id="roomType" name="roomType"> Suite
+                </section>
+
+                <section>
+                    <label for="bedType">Bed type:</label>
+                    <input type="radio" id="bedType" name="bedType"> King
+                    <input type="radio" id="bedType" name="bedType"> Double Double
+                </section>
+
+                <section>
+                    <input type="checkbox" id="smoking" name="smoking">
+                    <label for="smoking">Smoking</label>
+                </section>
+            </fieldset>
+            <br>
+            <fieldset id="contact-information">
+                <legend>Contact Information</legend>
+                <section>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </section>
+
+                <section>
+                    <label for="emailAddress">Email:</label>
+                    <input type="email" id="emailAddress" name="emailAddress">
+                </section>
+
+                <section>
+                    <label for="phoneNumber">Phone:</label>
+                    <input class="gray" type="tel" id="phoneNumber" name="phoneNumber" value = "999-999-999" >
+                </section>
+            </fieldset>
+            <br>
+            <button type="submit">Submit Request</button>
+        </form>
+        <footer>
+            <p>&copy; Ayush n01694782 2024</p>
+        </footer>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

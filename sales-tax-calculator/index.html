@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+    <h1>Sales Tax Calculator</h1>
+    <form>
+        <legend>Enter Subtotal and Tax Rate and click "Calculate".</legend><br>
+        <label for="subTotal">Subtotal:</label>
+        <input type="text" id="subTotal" name="subTotal">
+        <span id="subTotal_error"></span><br>
+        <label for="taxRate">Tax Rate:</label>
+        <input type="text" id="taxRate" name="taxRate">
+        <span id="taxRate_error"></span><br>
+        <label for="salesTax">Sales Tax:</label>
+        <input type="text" id="salesTax" name="salesTax" readonly><br>
+        <label for="total">Total:</label>
+        <input type="text" id="total" name="total" readonly><br>
+        <button type="button" id="calculate">Calculate</button>
+        <button type="button" id="clear">Clear</button>
+    </form>
+    </div>
+    <footer>
+        <p>&copy; Ayush n01694782 2024</p>
+    </footer>
+    <script src="test.js"></script>
+</body>
+</html>

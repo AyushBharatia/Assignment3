@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class = "form">
+            <h1>Change Calculator</h1>
+            <form>
+                <section>
+                    <label for="amountOfChange">Enter amount of change due (0-99):</label>
+                    <input type="text" id="amountOfChange" name="amountOfChange">
+                    <button type="button" id="calculate">Calculate</button>
+                    <br>
+                </section>
+                
+                <section>
+                    <label for="amountOfQuarters">Quarters:</label>
+                    <input type="text" id="amountOfQuarters" name="amountOfQuarters" readonly>
+                    <br>
+                </section>
+
+                <section>
+                    <label for="amountOfDimes">Dimes:</label>
+                    <input type="text" id="amountOfDimes" name="amountOfDimes" readonly>
+                    <br>
+                </section>
+
+                <section>
+                    <label for="amountOfNickles">Nickels:</label>
+                    <input type="text" id="amountOfNickles" name="amountOfNickles" readonly>
+                    <br>
+                </section>
+
+                <section>
+                    <label for="amountOfPennies">Pennies:</label>
+                    <input type="text" id="amountOfPennies" name="amountOfPennies" readonly>
+                </section>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; Ayush n01694782 2024</p>
+        </footer>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>

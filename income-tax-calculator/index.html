@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id ="wrapper">
+        <div id="form">
+            <h1>Income Tax Calculator</h1>
+            <form>
+                <section>
+                    <label for="taxableIncome">Enter taxable income:</label>
+                    <input type="text" id="taxableIncome" name="taxableIncome">
+                    <button type="button" id="calculate">Calculate</button>
+                    <span id="taxableIncome_error"></span>
+                    <br>
+                </section>
+
+                <section>
+                    <label for="taxOwed">Income tax owed:</label>
+                    <input type="text" id="taxOwed" name="taxOwed" readonly>
+                </section>
+            </form>
+            <footer>
+                <p>&copy; Ayush n01694782 2024</p>
+            </footer>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
